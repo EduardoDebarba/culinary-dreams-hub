@@ -1,57 +1,156 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-header{
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+}
+
+.name-restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: #15225A;
+  font-weight: 500;
+}
+
+.name-restaurant img {
+  width: 2.5rem;
+}
+
+.list-menu {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  gap: 1.7rem;
+  font-size: 1.5rem;
+}
+
+.list-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.list-menu a:hover{
+    color: white;
+    background-color: rgb(19, 116, 19);
+    padding: 0.4rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.list-btn img {
+  width: 1.9rem;
+}
+
+.list-btn button {
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+  padding: 0.7rem;
+}
+
+.list-btn button:hover{
+    border: 3px solid #15225A;
+    transition: 0.1s;
+}
+
+.carrousel{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    background-color: bisque;
-    padding: 1rem;
+    height: 88vh;
+    margin-right: 7rem;
+    margin-left: 10rem;
 }
 
-.name-restaurant{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
+.carrousel img{
+    width: 60%;
 }
 
-.name-restaurant img{
-    width: 2.5rem;
-}
-
-.list-menu{
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    list-style: none;
-    gap: 1.5rem;
+.carrousel-content h3{
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
-.list-menu a{
-    color: black;
-    text-decoration: none;
+.carrousel-content h1{
+    color: #15225A;
+    font-size: 6rem;
 }
 
-.list-btn img{
-    width: 1.9rem;
+.carrousel-content p{
+    font-size: 1.3rem;
 }
 
-.list-btn button{
-    border-radius: 50%;
-    border-style: none;
-    cursor: pointer;
+.carrousel-content button{
+    background-color: #15225A;
+    color: #fff;
     padding: 0.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border-style: none;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.dishes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dishe{
+    background-color: rgb(166, 143, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    padding: 1rem;
+    min-height: 26rem;
+}
+
+
+
+.dishe img{
+    width: 80%;
+}
+
+
+
+.dishes-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.dishes-content button{
+    background-color: #15225A;
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border-style: none;
 }
