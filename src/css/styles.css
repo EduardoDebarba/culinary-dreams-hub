@@ -17,6 +17,7 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
+  background-color: #fff;
 }
 
 .name-restaurant {
@@ -25,7 +26,7 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
-  color: #15225A;
+  color: #15225a;
   font-weight: 500;
 }
 
@@ -49,12 +50,12 @@ header {
   text-decoration: none;
 }
 
-.list-menu a:hover{
-    color: white;
-    background-color: rgb(19, 116, 19);
-    padding: 0.4rem;
-    border-radius: 10px;
-    transition: 0.3s;
+.list-menu a:hover {
+  color: white;
+  background-color: rgb(19, 116, 19);
+  padding: 0.4rem;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
 .list-btn img {
@@ -68,89 +69,229 @@ header {
   padding: 0.7rem;
 }
 
-.list-btn button:hover{
-    border: 3px solid #15225A;
-    transition: 0.1s;
+.list-btn button:hover {
+  border: 3px solid #15225a;
+  transition: 0.1s;
 }
 
-.carrousel{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 88vh;
-    margin-right: 7rem;
-    margin-left: 10rem;
+.carrousel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 88vh;
+  margin-right: 7rem;
+  margin-left: 10rem;
 }
 
-.carrousel img{
-    width: 60%;
+.carrousel img {
+  width: 60%;
 }
 
-.carrousel-content h3{
-    font-size: 1.5rem;
-    font-weight: 500;
+.carrousel-content h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-.carrousel-content h1{
-    color: #15225A;
-    font-size: 6rem;
+.carrousel-content h1 {
+  color: #15225a;
+  font-size: 6rem;
 }
 
-.carrousel-content p{
-    font-size: 1.3rem;
+.carrousel-content p {
+  font-size: 1.3rem;
 }
 
-.carrousel-content button{
-    background-color: #15225A;
-    color: #fff;
-    padding: 0.7rem;
-    border-radius: 10px;
-    cursor: pointer;
-    border-style: none;
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
+.carrousel-content button {
+  background-color: #15225a;
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border-style: none;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
 }
 
-.dishes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.container-dishes {
+  background-color: #e1d9d9;
+  padding: 2rem;
 }
 
-.dishe{
-    background-color: rgb(166, 143, 143);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 25%;
-    padding: 1rem;
-    min-height: 26rem;
+.dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.titles {
+  text-align: center;
+  padding: 2rem;
+}
+
+.titles h4 {
+  font-size: 1.4rem;
+}
+
+.titles h2 {
+  font-size: 2rem;
+  color: #15225a;
+  margin-top: 0.5rem;
+}
+
+.dishe {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  padding: 1rem;
+  min-height: 24rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.food {
+  width: 70%;
+  aspect-ratio: 4/3;
+}
+
+.dishe p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #15225a;
+  font-weight: 700;
+}
+
+.star {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.dishes-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.btn {
+  background-color: #15225a;
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border-style: none;
+}
+
+.content-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding: 2rem;
+  gap: 2rem;
+  height: 70vh;
+}
+
+.content-about img {
+  width: 50%;
+}
+
+.text-about {
+  line-height: 1.5rem;
+}
+
+.text-about h2 {
+  color: #15225a;
+  font-size: 2rem;
+}
+
+.text-about p {
+  margin-top: 1rem;
+}
+
+.about {
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 1rem;
+  width: 32%;
+}
+
+.about img {
+  width: 20%;
+}
+
+.btn-about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.menu {
+  background-color: #e1d9d9;
 }
 
 
 
-.dishe img{
-    width: 80%;
+.container-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 8rem;
+  margin-left: 8rem;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-
-
-.dishes-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 2rem;
+.option {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-.dishes-content button{
-    background-color: #15225A;
-    color: #fff;
-    padding: 0.7rem;
-    border-radius: 10px;
-    cursor: pointer;
-    border-style: none;
+.img-food{
+  width: 100%;
+  border-radius: 5px;
+  aspect-ratio: 4/3;
+}
+
+.option .star {
+  width: 30%;
+  margin-bottom: 0;
+}
+.option h4 {
+  font-size: 1.8rem;
+  color: #15225a;
+  margin-bottom: 0.5rem;
+}
+
+.option p {
+  margin-bottom: 0.8rem;
+}
+.text-options {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text-options p {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
