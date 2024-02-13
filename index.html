@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   </head>
   <body>
     <header>
@@ -46,18 +50,58 @@
       </div>
     </header>
     <main>
-      <div id="home" class="carrousel">
-        <div class="carrousel-content">
-          <h3>Nossos Pratos Especiais</h3>
-          <h1>Pizza</h1>
-          <p>
-            Explore a autêntica paixão italiana em cada fatia, uma experiência
-            de sabor inigualável.
-          </p>
-          <button>Peça Agora</button>
+      <section class="home" id="home">
+
+        <div class="swiper home-container home-slider">
+
+          <div class="swiper-wrapper wrapper">
+
+            <div class="swiper-slide slide">
+              <div class="slide-content">
+                <h3>Nossos Pratos Especiais</h3>
+                <h1>Pizza</h1>
+                <p>
+                  Explore a autêntica paixão italiana em cada fatia, uma experiência
+                  de sabor inigualável.
+                </p>
+                <button>Peça Agora</button>
+              </div>
+              <img src="./src/images/secao1-pizza.png" alt="" />
+            </div>
+
+            <div class="swiper-slide slide">
+
+              <div class="slide-content">
+                <h3>Nossos Pratos Especiais</h3>
+                <h1>Hambúrguer</h1>
+                <p>
+                  nossos hambúrgueres são mais do que apenas comida, são uma aventura gastronômica em cada camada.
+                </p>
+                <button>Peça Agora</button>
+              </div>
+              <img id="img-hamburguer" src="./src/images/secao1-hamburguer.png" alt="" />
+            </div>
+
+            <div class="swiper-slide slide">
+
+              <div class="slide-content">
+                <h3>Nossos Pratos Especiais</h3>
+                <h1>Massa</h1>
+                <p>
+                  A arte da massa: onde cada garfada é uma sinfonia de sabores e texturas que encanta o paladar.
+                </p>
+                <button>Peça Agora</button>
+              </div>
+              <img id="img-pasta" src="./src/images/secao1-pasta.png" alt="" />
+            </div>
+
+          </div>
+
         </div>
-        <img src="./src/images/secao1-pizza.png" alt="" />
-      </div>
+
+        <div class="swiper-pagination"></div>
+
+      </section>
 
       <div id="dishes" class="container-dishes">
         <div class="titles">
@@ -484,5 +528,7 @@
     </footer>
     <hr>
     <p id="text-copy">Copyright @ 2024 By Eduardo Debarba</p>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>

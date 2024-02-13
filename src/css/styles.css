@@ -74,34 +74,64 @@ header {
   transition: 0.1s;
 }
 
-.carrousel {
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slide {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 88vh;
+  /* height: 88vh; */
   margin-right: 7rem;
   margin-left: 10rem;
+  background-color: red;
 }
 
-.carrousel img {
+.slide img {
   width: 60%;
 }
 
-.carrousel-content h3 {
+#img-hamburguer{
+  width: 40%;
+}
+
+#img-pasta{
+  width: 40%;
+}
+
+.slide-content{
+  width: 50%;
+}
+
+.slide-content h3 {
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.carrousel-content h1 {
+.slide-content h1 {
   color: #15225a;
   font-size: 6rem;
 }
 
-.carrousel-content p {
+.slide-content p {
   font-size: 1.3rem;
 }
 
-.carrousel-content button {
+#img-hamburguer{
+  width: 40%;
+}
+
+.slide-content button {
   background-color: #15225a;
   color: #fff;
   padding: 0.7rem;
@@ -111,6 +141,27 @@ header {
   font-size: 1.2rem;
   margin-top: 1.5rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container-dishes {
   background-color: #e1d9d9;
