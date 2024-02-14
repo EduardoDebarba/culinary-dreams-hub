@@ -39,13 +39,13 @@
       </nav>
       <div class="list-btn">
         <button class="btn-search">
-          <img src="./src/images/icons/icon-pesquisar.png" alt="" />
+          <img src="./src/images/icons/icon-pesquisar.png" alt="lupa" />
         </button>
         <button class="btn-like">
-          <img src="./src/images/icons/icon-gostar.png" alt="" />
+          <img src="./src/images/icons/icon-gostar.png" alt="coração" />
         </button>
         <button class="btn-shop">
-          <img src="./src/images/icons/icon-carrinho-de-compras.png" alt="" />
+          <img src="./src/images/icons/icon-carrinho-de-compras.png" alt="carrinho-compras" />
         </button>
       </div>
     </header>
@@ -56,7 +56,19 @@
 
           <div class="swiper-wrapper wrapper">
 
-            <div class="swiper-slide slide">
+            <div class="swiper-slide" id="slide">
+              <div class="slide-content">
+                <h3>Nossos Pratos Especiais</h3>
+                <h1>Hambúrguer</h1>
+                <p>
+                  Nosso hambúrguer é mais do que apenas comida, é uma aventura gastronômica em cada camada.
+                </p>
+                <button>Peça Agora</button>
+              </div>
+              <img id="img-hamburguer" src="./src/images/secao1-hamburguer.png" alt="hamburguer" />
+            </div>
+
+            <div class="swiper-slide" id="slide">
               <div class="slide-content">
                 <h3>Nossos Pratos Especiais</h3>
                 <h1>Pizza</h1>
@@ -66,24 +78,10 @@
                 </p>
                 <button>Peça Agora</button>
               </div>
-              <img src="./src/images/secao1-pizza.png" alt="" />
-            </div>
+              <img id="img-pizza" src="./src/images/secao1-pizza.png" alt="pizza" />
+            </div> 
 
-            <div class="swiper-slide slide">
-
-              <div class="slide-content">
-                <h3>Nossos Pratos Especiais</h3>
-                <h1>Hambúrguer</h1>
-                <p>
-                  nossos hambúrgueres são mais do que apenas comida, são uma aventura gastronômica em cada camada.
-                </p>
-                <button>Peça Agora</button>
-              </div>
-              <img id="img-hamburguer" src="./src/images/secao1-hamburguer.png" alt="" />
-            </div>
-
-            <div class="swiper-slide slide">
-
+            <div class="swiper-slide" id="slide">
               <div class="slide-content">
                 <h3>Nossos Pratos Especiais</h3>
                 <h1>Massa</h1>
@@ -92,94 +90,91 @@
                 </p>
                 <button>Peça Agora</button>
               </div>
-              <img id="img-pasta" src="./src/images/secao1-pasta.png" alt="" />
+              <img id="img-pasta" src="./src/images/secao1-pasta.png" alt="massa" />
             </div>
 
           </div>
-
+          <div class="swiper-pagination"></div>
         </div>
 
-        <div class="swiper-pagination"></div>
-
-      </section>
-
-      <div id="dishes" class="container-dishes">
-        <div class="titles">
-          <h4>Nossos Pratos</h4>
-          <h2>PRATOS POPULARES</h2>
-        </div>
-        <div class="dishes">
-          <div class="dishe">
-            <img class="food" src="./src/images/secao2-breakfast.png" alt="" />
-            <p>Café Estilo Americano</p>
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
-            <div class="dishes-content">
-              <p>R$25.99</p>
-              <button class="btn">Adicionar no Carrinho</button>
+        <section id="dishes" class="container-dishes">
+          <div class="titles">
+            <h4>Nossos Pratos</h4>
+            <h2>PRATOS POPULARES</h2>
+          </div>
+          <div class="dishes">
+            <div class="dishe">
+              <img class="food" src="./src/images/secao2-breakfast.png" alt="breakfast" />
+              <p>Café Estilo Americano</p>
+              <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avaliação" />
+              <div class="dishes-content">
+                <p>R$25.99</p>
+                <button class="btn">Adicionar no Carrinho</button>
+              </div>
+            </div>
+  
+            <div class="dishe">
+              <img class="food" src="./src/images/secao2-taco.png" alt="taco" />
+              <p>Tacos</p>
+              <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avaliação" />
+              <div class="dishes-content">
+                <p>R$14.99</p>
+                <button class="btn">Adicionar no Carrinho</button>
+              </div>
+            </div>
+  
+            <div class="dishe">
+              <img class="food" src="./src/images/secao2-cookie.png" alt="cookie" />
+              <p>Cookies de Chocolate</p>
+              <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avaliação" />
+              <div class="dishes-content">
+                <p>R$4.99</p>
+                <button class="btn">Adicionar no Carrinho</button>
+              </div>
+            </div>
+  
+            <div class="dishe">
+              <img class="food" src="./src/images/secao2-burrito.png" alt="burrito" />
+              <p>Burrito</p>
+              <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avaliação" />
+              <div class="dishes-content">
+                <p>R$10.99</p>
+                <button class="btn">Adicionar no Carrinho</button>
+              </div>
+            </div>
+  
+            <div class="dishe">
+              <img class="food" src="./src/images/secao2-panquecas.png" alt="panquecas" />
+              <p>Panquecas</p>
+              <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avaliação" />
+              <div class="dishes-content">
+                <p>R$20.99</p>
+                <button class="btn">Adicionar no Carrinho</button>
+              </div>
+            </div>
+  
+            <div class="dishe">
+              <img
+                class="food"
+                src="./src/images/secao2-buffalowings.png"
+                alt="buffalo-wings"
+              />
+              <p>Buffalo Wings</p>
+              <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avaliação" />
+              <div class="dishes-content">
+                <p>R$35.99</p>
+                <button class="btn">Adicionar no Carrinho</button>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div class="dishe">
-            <img class="food" src="./src/images/secao2-taco.png" alt="" />
-            <p>Tacos</p>
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
-            <div class="dishes-content">
-              <p>R$14.99</p>
-              <button class="btn">Adicionar no Carrinho</button>
-            </div>
-          </div>
-
-          <div class="dishe">
-            <img class="food" src="./src/images/secao2-cookie.png" alt="" />
-            <p>Cookies de Chocolate</p>
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
-            <div class="dishes-content">
-              <p>R$4.99</p>
-              <button class="btn">Adicionar no Carrinho</button>
-            </div>
-          </div>
-
-          <div class="dishe">
-            <img class="food" src="./src/images/secao2-burrito.png" alt="" />
-            <p>Burrito</p>
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
-            <div class="dishes-content">
-              <p>R$10.99</p>
-              <button class="btn">Adicionar no Carrinho</button>
-            </div>
-          </div>
-
-          <div class="dishe">
-            <img class="food" src="./src/images/secao2-panquecas.png" alt="" />
-            <p>Panquecas</p>
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
-            <div class="dishes-content">
-              <p>R$20.99</p>
-              <button class="btn">Adicionar no Carrinho</button>
-            </div>
-          </div>
-
-          <div class="dishe">
-            <img
-              class="food"
-              src="./src/images/secao2-buffalowings.png"
-              alt=""
-            />
-            <p>Buffalo Wings</p>
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
-            <div class="dishes-content">
-              <p>R$35.99</p>
-              <button class="btn">Adicionar no Carrinho</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="about" class="titles">
+      <section id="about" class="titles">
         <h4>Sobre Nós</h4>
         <h2>PORQUE ESCOLHER NÓS?</h2>
-      </div>
+      </section>
       <div class="content-about">
-        <img id="img-about" src="./src/images/secao3-food.png" alt="" />
+        <img id="img-about" src="./src/images/secao3-food.png" alt="comida" />
         <div class="text-about">
           <h2>Melhor Comida do País</h2>
           <p>
@@ -195,23 +190,24 @@
           </p>
           <div class="btn-about">
             <button class="about">
-              <img src="./src/images/icons/icon-delivery.png" alt="" />
+              <img src="./src/images/icons/icon-delivery.png" alt="delivery" />
               Estrega Grátis
             </button>
             <button class="about">
-              <img src="./src/images/icons/icon-dolar.png" alt="" />
+              <img src="./src/images/icons/icon-dolar.png" alt="dolar" />
               Fácil Pagamento
             </button>
             <button class="about">
-              <img src="./src/images/icons/icon-headset.png" alt="" />
+              <img src="./src/images/icons/icon-headset.png" alt="headset" />
               Atendimento 24/7
             </button>
           </div>
           <button class="btn">Saiba Mais</button>
         </div>
       </div>
+    
 
-      <div id="menu" class="menu">
+      <section id="menu" class="menu">
         <div class="titles">
           <h4>Nosso Menu</h4>
           <h2>ESPECIAIS DO DIA</h2>
@@ -221,9 +217,9 @@
             <img
               class="img-food"
               src="./src/images/secao4-cupcake.jpg"
-              alt=""
+              alt="cupcake"
             />
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
+            <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avalição" />
             <h4>Cupcake</h4>
             <p>
               Desperte seus sentidos com nossos irresistíveis cupcakes decorados
@@ -236,8 +232,8 @@
           </div>
 
           <div class="option">
-            <img class="img-food" src="./src/images/secao4-doce.jpeg" alt="" />
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
+            <img class="img-food" src="./src/images/secao4-doce.jpeg" alt="doce" />
+            <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avalição" />
             <h4>Alfajor</h4>
             <p>
               Descubra por que nosso alfajor é tão amado por todos que o provam.
@@ -252,9 +248,9 @@
             <img
               class="img-food"
               src="./src/images/secao4-feijoada.jpg"
-              alt=""
+              alt="feijoada"
             />
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
+            <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avalição" />
             <h4>Feijoada</h4>
             <p>
               A tradição e o sabor brasileiro em cada colher: prove nossa
@@ -270,9 +266,9 @@
             <img
               class="img-food"
               src="./src/images/secao4-hamburguer.jpg"
-              alt=""
+              alt="hamburguer"
             />
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
+            <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avalição" />
             <h4>Hambúrguer</h4>
             <p>
               O hambúrguer dos seus sonhos está aqui: suculento, saboroso e
@@ -288,9 +284,9 @@
             <img
               class="img-food"
               src="./src/images/secao4-hotdog.jpeg"
-              alt=""
+              alt="hotdog"
             />
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
+            <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avalição" />
             <h4>Cachorro Quente</h4>
             <p>
               O clássico que nunca sai de moda: experimente nosso
@@ -306,9 +302,9 @@
             <img
               class="img-food"
               src="./src/images/secao4-macchease.jpg"
-              alt=""
+              alt="macchease"
             />
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
+            <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avalição" />
             <h4>Macarrão com Queijo</h4>
             <p>
               Conforto em cada garfada: prove nosso irresistível macarrão com
@@ -324,9 +320,9 @@
             <img
               class="img-food"
               src="./src/images/secao4-pinklemoned.jpg"
-              alt=""
+              alt="pinklemoned"
             />
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
+            <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avalição" />
             <h4>Pink Lemonade</h4>
             <p>
               Refresque-se com nossa Pink Lemonade, uma explosão de sabores
@@ -339,8 +335,8 @@
           </div>
 
           <div class="option">
-            <img class="img-food" src="./src/images/secao4-pizza.jpeg" alt="" />
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
+            <img class="img-food" src="./src/images/secao4-pizza.jpeg" alt="pizza" />
+            <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avalição" />
             <h4>Pizza</h4>
             <p>
               Uma explosão de sabores em cada fatia: nossa pizza artesanal,
@@ -356,9 +352,9 @@
             <img
               class="img-food"
               src="./src/images/secao4-waffles.jpg"
-              alt=""
+              alt="waffles"
             />
-            <img class="star" src="./src/images/stars-rating.png" alt="" />
+            <img class="star" src="./src/images/stars-rating.png" alt="estrelas-avalição" />
             <h4>Waffles</h4>
             <p>
               Um deleite para qualquer hora do dia: experimente nossos waffles.
@@ -369,9 +365,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="review" class="reviews">
+      <section id="review" class="reviews">
         <div class="titles">
           <h4>Avaliações dos Usuários</h4>
           <h2>O QUE ELES DIZEM</h2>
@@ -385,7 +381,7 @@
               <div class="person-information">
                 <div class="name">Amanda Santos</div>
                 <div class="rating">
-                  <img src="./src/images/stars-rating.png" alt="" />
+                  <img src="./src/images/stars-rating.png" alt="estrelas-avalição" />
                 </div>
               </div>
             </div>
@@ -404,7 +400,7 @@
               <div class="person-information">
                 <div class="name">Camila Ferreira</div>
                 <div class="rating">
-                  <img src="./src/images/stars-rating.png" alt="" />
+                  <img src="./src/images/stars-rating.png" alt="estrelas-avalição" />
                 </div>
               </div>
             </div>
@@ -423,7 +419,7 @@
               <div class="person-information">
                 <div class="name">Jorge Morreira</div>
                 <div class="rating">
-                  <img src="./src/images/stars-rating.png" alt="" />
+                  <img src="./src/images/stars-rating.png" alt="estrelas-avalição" />
                 </div>
               </div>
             </div>
@@ -434,7 +430,7 @@
             </div>
           </div>
           
-          <!-- <div class="card">
+          <div class="card">
             <div class="info">
               <div class="photo">
                 <img src="./src/images/person4.jpg" alt="Foto do Cliente" />
@@ -442,7 +438,7 @@
               <div class="person-information">
                 <div class="name">Wagner Couto</div>
                 <div class="rating">
-                  <img src="./src/images/stars-rating.png" alt="" />
+                  <img src="./src/images/stars-rating.png" alt="estrelas-avalição" />
                 </div>
               </div>
             </div>
@@ -451,10 +447,11 @@
                 Este restaurante conquistou meu coração e meu estômago! A comida é simplesmente divina, e a entrega é sempre pontual. Recomendo experimentar o prato de tacos, é uma explosão de sabores e uma opção saudável também. Mal posso esperar para pedir novamente!
               </p>
             </div>
-          </div> -->
+          </div>
         </div>
-      </div>
-      <div id="order" class="order">
+      </section>
+
+      <section id="order" class="order">
         <div class="titles">
           <h4>Peça Agora</h4>
           <h2>GRÁTIS E RÁPIDO</h2>
@@ -505,9 +502,8 @@
             <input type="submit" value="Peça Agora" class="btn">
           </form>
         </div>
-          
-        </div>
-      </div>
+      </section>
+      <!-- </div> -->
     </main>
     <footer>
       <div class="footer-locations"><h3>Localização</h3><p>Brasil</p>
@@ -521,14 +517,15 @@
       New York, USA
     </div>
       <div class="footer-follow"><h3>Nos Siga</h3>
-      <a href="">Facebook</a>
-      <a href="">Twitter</a>
-      <a href="">Instagram</a>
-      <a href="">Linkedin</a></div>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.x.com" target="_blank">Twitter</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com" target="_blank">Linkedin</a></div>
     </footer>
     <hr>
     <p id="text-copy">Copyright @ 2024 By Eduardo Debarba</p>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./src/js/script.js"></script>
   </body>
 </html>
