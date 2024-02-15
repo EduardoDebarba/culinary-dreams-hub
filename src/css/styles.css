@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -18,6 +15,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 1000;
 }
 
 .name-restaurant {
@@ -66,7 +64,7 @@ header {
   border-radius: 50%;
   border-style: none;
   cursor: pointer;
-  padding: .7rem;
+  padding: 0.7rem;
 }
 
 .list-btn button:hover {
@@ -82,15 +80,16 @@ header {
   height: 88vh;
 }
 
-#img-hamburguer{
+#img-hamburguer {
   width: 40%;
 }
 
-#img-pasta, #img-pizza{
+#img-pasta,
+#img-pizza {
   width: 35%;
 }
 
-.slide-content{
+.slide-content {
   width: 45%;
 }
 
@@ -255,6 +254,9 @@ header {
 
 .reviews {
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-options {
@@ -310,43 +312,7 @@ header {
   font-weight: 500;
 }
 
-.slideshow-container {
-  margin-right: 10rem;
-  margin-left: 10rem;
-  position: relative;
-  gap: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  
-}
-
-.slideshow-container button{
-  background: transparent;
-  border-style: none;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.card {
-  width: 30%;
-}
-
-.card-photo{
+.card-photo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -355,14 +321,14 @@ header {
   border-radius: 15px 15px 0 0;
 }
 
-.card-photo img{
+.card-photo img {
   width: 50%;
   border-radius: 50%;
-  padding: .2rem;
+  padding: 0.2rem;
   border: snow solid 3px;
 }
 
-.card-content{
+.card-content {
   background-color: #e1d9d9;
   display: flex;
   justify-content: center;
@@ -372,54 +338,90 @@ header {
   border-radius: 0 0 15px 15px;
 }
 
-.card-content h3{
+.card-content h3 {
   font-size: 1.5rem;
 }
 
-.card-content img{
+.card-content img {
   width: 40%;
-  
 }
 
-.card-content p{
+.card-content p {
   text-align: center;
+} 
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
 }
 
-.next-button, .previous-button{
-  position: absolute;
+.wrapper i {
   top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  color: #15225a;
+  line-height: 50px;
+  background-color: #e1d9d9;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
   transform: translateY(-50%);
+  transition: transform 0.1s linear;
 }
 
-.next-button{
-  right: 0;
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
 }
 
-.previous-button{
-left: 0;
+.wrapper i:first-child{
+  left: -70px;
 }
 
+.wrapper i:last-child{
+  right: -70px;
+}
 
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
 
+.carousel::-webkit-scrollbar {
+  display: none;
+}
 
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
 
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
 
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card {
+  scroll-snap-align: start;
+  height: 100%;
+  flex-direction: column;
+  border-radius: 8px;
+  list-style: none;
+}
 
 .order {
   background-color: #e1d9d9;
@@ -518,36 +520,36 @@ hr {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  header{
-    padding: .5rem;
+  header {
+    padding: 0.5rem;
   }
-  .name-restaurant{
+  .name-restaurant {
     font-size: 1.8rem;
   }
 
-  .name-restaurant img{
+  .name-restaurant img {
     width: 1.8rem;
   }
 
-  .top-menu{
+  .top-menu {
     display: none;
   }
 
-  .list-btn img{
+  .list-btn img {
     width: 1.5rem;
   }
 
-  .list-btn button{
-    padding: .5rem;
+  .list-btn button {
+    padding: 0.5rem;
   }
 
-  #slide{
+  #slide {
     padding: 0;
     flex-direction: column;
     height: 73vh;
   }
 
-  .slide-content{
+  .slide-content {
     width: 100%;
     padding: 1.5rem;
   }
@@ -555,20 +557,21 @@ hr {
   .slide-content h3 {
     font-size: 1.2rem;
   }
-  
+
   .slide-content h1 {
     font-size: 3.5rem;
   }
-  
+
   .slide-content p {
     font-size: 1.2rem;
   }
 
-  #img-hamburguer{
+  #img-hamburguer {
     width: 80%;
   }
 
-  #img-pizza, #img-pasta{
+  #img-pizza,
+  #img-pasta {
     width: 60%;
   }
 
@@ -597,10 +600,11 @@ hr {
   .btn-about {
     gap: 1rem;
     justify-content: center;
+    width: 100%;
   }
 
   .about {
-    width: 46%;
+    width: 70%;
   }
 
   .container-options {
@@ -624,7 +628,12 @@ hr {
   }
 
   .card {
-    width: 100%;
+    width: 80%;
+    
+  }
+
+  .reviews,#users{
+    display: none;
   }
 
   .container-order {
@@ -665,37 +674,39 @@ hr {
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
-
-  header{
-    padding: .5rem;
+  /* body{
+    overflow: hidden;
+  } */
+  header {
+    padding: 0.5rem;
   }
-  .name-restaurant{
+  .name-restaurant {
     font-size: 1.8rem;
   }
 
-  .name-restaurant img{
+  .name-restaurant img {
     width: 1.8rem;
   }
 
-  .top-menu{
+  .top-menu {
     display: none;
   }
 
-  .list-btn img{
+  .list-btn img {
     width: 1.5rem;
   }
 
-  .list-btn button{
-    padding: .5rem;
+  .list-btn button {
+    padding: 0.5rem;
   }
 
-  #slide{
+  #slide {
     padding: 0;
     flex-direction: column;
     height: 60vh;
   }
 
-  .slide-content{
+  .slide-content {
     width: 85%;
     padding: 1.5rem;
   }
@@ -703,20 +714,21 @@ hr {
   .slide-content h3 {
     font-size: 1.2rem;
   }
-  
+
   .slide-content h1 {
     font-size: 3.5rem;
   }
-  
+
   .slide-content p {
     font-size: 1.2rem;
   }
 
-  #img-hamburguer{
+  #img-hamburguer {
     width: 50%;
   }
 
-  #img-pizza, #img-pasta{
+  #img-pizza,
+  #img-pasta {
     width: 35%;
   }
 
@@ -778,7 +790,11 @@ hr {
   }
 
   .card {
-    width: 47%;
+    width: 95%;
+  }
+
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 5px);
   }
 
   .container-order {
