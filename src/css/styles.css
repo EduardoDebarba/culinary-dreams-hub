@@ -518,6 +518,26 @@ hr {
   padding: 1rem;
 }
 
+.loader-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.loader-container.fade-out{
+  top: 110%;
+  opacity: 0;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
 
   header {
