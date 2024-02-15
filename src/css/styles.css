@@ -288,6 +288,7 @@ header {
   width: 30%;
   margin-bottom: 0;
 }
+
 .option h4 {
   font-size: 1.8rem;
   color: #15225a;
@@ -309,58 +310,116 @@ header {
   font-weight: 500;
 }
 
-.container-review {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.slideshow-container {
   margin-right: 10rem;
   margin-left: 10rem;
+  position: relative;
   gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
 }
+
+.slideshow-container button{
+  background: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .card {
   width: 30%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
-.photo {
-  width: 100px;
-  height: 100px;
+.card-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #15225a;
+  padding: 1.5rem;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-photo img{
+  width: 50%;
   border-radius: 50%;
-  overflow: hidden;
-  margin-right: 1rem;
+  padding: .2rem;
+  border: snow solid 3px;
 }
 
-.photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.info {
+.card-content{
+  background-color: #e1d9d9;
   display: flex;
-  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 0 0 15px 15px;
 }
 
-.person-information {
-  margin-top: 1.1rem;
+.card-content h3{
+  font-size: 1.5rem;
 }
 
-.name {
-  font-size: 1.2rem;
-  color: #15225a;
-  font-weight: bold;
+.card-content img{
+  width: 40%;
+  
 }
 
-.rating img {
-  width: 70%;
-  height: 3rem;
+.card-content p{
+  text-align: center;
 }
+
+.next-button, .previous-button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next-button{
+  right: 0;
+}
+
+.previous-button{
+left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .order {
   background-color: #e1d9d9;
