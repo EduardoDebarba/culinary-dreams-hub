@@ -26,94 +26,70 @@
     />
   </head>
   <body>
-    <header>
-      <div class="name-restaurant">
-        <img src="./src/images/icons/icon-fork-and-knife.png" alt="" />
-        <p>Resto</p>
-      </div>
-      <nav class="top-menu">
-        <ul class="list-menu">
-          <li><a href="#home">Início</a></li>
-          <li><a href="#dishes">Pratos</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#review">Avaliações</a></li>
-          <li><a href="#order">Pedidos</a></li>
-        </ul>
-      </nav>
-      <div class="list-btn">
-        <button class="btn-search">
-          <img src="./src/images/icons/icon-pesquisar.png" alt="lupa" />
-        </button>
-        <button class="btn-like">
-          <img src="./src/images/icons/icon-gostar.png" alt="coração" />
-        </button>
-        <button class="btn-shop">
-          <img
-            src="./src/images/icons/icon-carrinho-de-compras.png"
-            alt="carrinho-compras"
-          />
-        </button>
-      </div>
-    </header>
     <main>
-      <section class="home" id="home">
-        <div class="swiper home-container home-slider">
-          <div class="swiper-wrapper wrapper">
-            <div class="swiper-slide" id="slide">
-              <div class="slide-content">
-                <h3>Nossos Pratos Especiais</h3>
-                <h1>Hambúrguer</h1>
-                <p>
-                  Nosso hambúrguer é mais do que apenas comida, é uma aventura
-                  gastronômica em cada camada.
-                </p>
-                <button>Peça Agora</button>
-              </div>
-              <img
-                id="img-hamburguer"
-                src="./src/images/secao1-hamburguer.png"
-                alt="hamburguer"
-              />
-            </div>
-
-            <div class="swiper-slide" id="slide">
-              <div class="slide-content">
-                <h3>Nossos Pratos Especiais</h3>
-                <h1>Pizza</h1>
-                <p>
-                  Explore a autêntica paixão italiana em cada fatia, uma
-                  experiência de sabor inigualável.
-                </p>
-                <button>Peça Agora</button>
-              </div>
-              <img
-                id="img-pizza"
-                src="./src/images/secao1-pizza.png"
-                alt="pizza"
-              />
-            </div>
-
-            <div class="swiper-slide" id="slide">
-              <div class="slide-content">
-                <h3>Nossos Pratos Especiais</h3>
-                <h1>Massa</h1>
-                <p>
-                  A arte da massa: onde cada garfada é uma sinfonia de sabores e
-                  texturas que encanta o paladar.
-                </p>
-                <button>Peça Agora</button>
-              </div>
-              <img
-                id="img-pasta"
-                src="./src/images/secao1-pasta.png"
-                alt="massa"
-              />
-            </div>
+      <div class="main-hero">
+        <header>
+          <div class="name-restaurant">
+            <ion-icon name="pizza"></ion-icon>
+            <p>Resto</p>
           </div>
-          <div class="swiper-pagination"></div>
+          <nav class="top-menu">
+            <ul class="list-menu">
+              <li><a href="#home">Início</a></li>
+              <li><a href="#dishes">Pratos</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#review">Avaliações</a></li>
+              <li><a href="#order">Pedidos</a></li>
+            </ul>
+          </nav>
+          <div class="list-btn">
+            <a href=""><ion-icon name="bag-handle"></ion-icon></a>
+          </div>
+        </header>
+        <section class="home">
+                <div class="main-home">
+                  <h1>UMA EXPERIÊNCIA AUTÊNTICA DA ITÁLIA NO SEU PRATO</h1>
+                  <p>
+                    No coração da cidade, nosso restaurante traz os verdadeiros sabores da culinária italiana, com ingredientes frescos, receitas tradicionais e um ambiente acolhedor. Venha viver essa experiência única!
+                  </p>
+                  <button>RESERVE AGORA</button>
+                </div>
+        </section>
+      </div>
+
+      <section class="container-infos">
+        <div class="card-info-left">
+          <div class="card-info">
+            <div class="card-header">
+              <img src="./src/images/icons8-caderno-60.png" alt="">
+              <h3>SABOR AUTÊNTICO</h3>
+            </div>
+            <p>Planeje sua visita ao nosso restaurante e experimente nosso sabor autêntico. Faça sua reserva online com antecedência de forma rápida e prática.</p>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <img src="./src/images/icons8-cloche-60.png" alt="">
+              <h3>INGREDIENTES PREMIUM</h3>
+            </div>
+            <p>Nossos pratos são preparados com ingredientes frescos e receitas tradicionais, trazendo o verdadeiro gosto da culinária italiana para você.</p>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <img src="./src/images/icons8-livro-aberto-60.png" alt="">
+              <h3>MENU CRIATIVO</h3>
+            </div>
+            <p>Cada receita conta uma história. Descubra o sabor e a tradição por trás dos nossos pratos e sinta-se em uma verdadeira viagem gastronômica.</p>
+          </div>
         </div>
+        <div class="card-info-right">
+        </div>
+        <img class="new-image" src="./src/images/info-card-2.jpg" alt="Nova imagem">
       </section>
+      
+      
+      
+      
 
       <section id="dishes" class="container-dishes">
         <div class="titles">
@@ -666,8 +642,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./src/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
-  <div class="loader-container">
+  <!-- <div class="loader-container">
     <img src="./src/images/loader.gif" alt="">
-  </div>
+  </div> -->
 </html>

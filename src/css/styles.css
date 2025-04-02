@@ -2,20 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
-  background-color: #fff;
   z-index: 1000;
+  width: 80%;
+  margin: 0 auto;
+  height: 10dvh;
 }
 
 .name-restaurant {
@@ -24,12 +24,14 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
-  color: #15225a;
+  color: #fff;
   font-weight: 500;
+  gap: 0.5rem;
 }
 
-.name-restaurant img {
-  width: 2.5rem;
+.name-restaurant ion-icon{
+  color: orange;
+  
 }
 
 .list-menu {
@@ -40,83 +42,134 @@ header {
   flex-direction: row;
   list-style: none;
   gap: 1.7rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .list-menu a {
-  color: black;
+  color: #fff;
   text-decoration: none;
+  position: relative;
 }
 
 .list-menu a:hover {
-  color: white;
-  background-color: rgb(19, 116, 19);
-  padding: 0.4rem;
-  border-radius: 10px;
-  transition: 0.3s;
+  text-decoration: underline;
 }
 
-.list-btn img {
-  width: 1.9rem;
+
+.list-btn ion-icon{
+  width: 30px;
+  height: 30px;
+  color: #fff;
 }
 
-.list-btn button {
-  border-radius: 50%;
-  border-style: none;
-  cursor: pointer;
-  padding: 0.7rem;
+.main-hero{
+  background: url('../images/main.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; 
 }
 
-.list-btn button:hover {
-  border: 3px solid #15225a;
-  transition: 0.1s;
-}
-
-#slide {
+.home{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
-  height: 88vh;
-}
-
-#img-hamburguer {
-  width: 40%;
-}
-
-#img-pasta,
-#img-pizza {
-  width: 35%;
-}
-
-.slide-content {
-  width: 45%;
-}
-
-.slide-content h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.slide-content h1 {
-  color: #15225a;
-  font-size: 6rem;
-}
-
-.slide-content p {
-  font-size: 1.3rem;
-}
-
-.slide-content button {
-  background-color: #15225a;
+  height: 90dvh;
   color: #fff;
-  padding: 0.7rem;
-  border-radius: 10px;
-  cursor: pointer;
-  border-style: none;
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
 }
+
+.main-home{
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
+
+.main-home h1{
+  width: 90%;
+  margin: 0 auto;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.main-home p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.main-home button{
+  width: 35%;
+  margin: 0 auto;
+  border-style: none;
+  border: none;
+  cursor: pointer;
+  color: orange;
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  padding: 0.5rem;
+  background: transparent;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.container-infos {
+  background-color: rgb(49, 48, 48);
+  color: #fff;
+  height: 90dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+}
+
+.card-info-left {
+  background-color: #37383a;
+  width: 35%;
+  height: 85%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  margin-right: 3rem;
+}
+
+.card-info p {
+  margin-left: 4.7rem;
+  margin-top: -1.5rem;
+  font-size: 0.9rem;
+}
+
+.card-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-info-right {
+  width: 45%;
+  height: 85%;
+  background-image: url("../images/info-card-1.jpg");
+  background-size: cover;
+  position: relative; 
+}
+
+.container-infos img.new-image {
+  position: absolute; 
+  right: -7%; 
+  top: 11%; 
+  width: 30%; 
+  height: auto;
+  z-index: 2; 
+}
+
+
+
+
+
+
+
+
 
 .container-dishes {
   background-color: #e1d9d9;
