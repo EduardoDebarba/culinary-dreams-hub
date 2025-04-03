@@ -1,317 +1,393 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resto Culinary</title>
-    <link rel="stylesheet" href="./src/css/styles.css" />
-    <link
-      rel="shortcut icon"
-      href="./src/images/icons/icon-restaurant.png"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <main>
-      <div class="main-hero">
-        <header>
-          <div class="name-restaurant">
-            <ion-icon name="pizza"></ion-icon>
-            <p>Resto</p>
-          </div>
-          <nav class="top-menu">
-            <ul class="list-menu">
-              <li><a href="#home">Início</a></li>
-              <li><a href="#dishes">Pratos</a></li>
-              <li><a href="#about">Sobre</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#review">Avaliações</a></li>
-              <li><a href="#order">Pedidos</a></li>
-            </ul>
-          </nav>
-          <div class="list-btn">
-            <a href=""><ion-icon name="bag-handle"></ion-icon></a>
-          </div>
-        </header>
-        <section class="home">
-                <div class="main-home">
-                  <h1>UMA EXPERIÊNCIA AUTÊNTICA DA ITÁLIA NO SEU PRATO</h1>
-                  <p>
-                    No coração da cidade, nosso restaurante traz os verdadeiros sabores da culinária italiana, com ingredientes frescos, receitas tradicionais e um ambiente acolhedor. Venha viver essa experiência única!
-                  </p>
-                  <button class="button">RESERVE AGORA</button>
-                </div>
-        </section>
-      </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Resto Culinary</title>
+		<link rel="stylesheet" href="./src/css/styles.css" />
+		<link
+			rel="shortcut icon"
+			href="./src/images/icons/icon-restaurant.png"
+			type="image/x-icon"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<main>
+			<div class="main-hero">
+				<header>
+					<div class="name-restaurant">
+						<ion-icon name="pizza"></ion-icon>
+						<p>Resto</p>
+					</div>
+					<nav class="top-menu">
+						<ul class="list-menu">
+							<li><a href="#home">Início</a></li>
+							<li><a href="#dishes">Pratos</a></li>
+							<li><a href="#about">Sobre</a></li>
+							<li><a href="#menu">Menu</a></li>
+							<li><a href="#review">Avaliações</a></li>
+							<li><a href="#order">Pedidos</a></li>
+						</ul>
+					</nav>
+					<div class="list-btn">
+						<a href=""><ion-icon name="bag-handle"></ion-icon></a>
+					</div>
+				</header>
+				<section class="home">
+					<div class="main-home">
+						<h1>UMA EXPERIÊNCIA AUTÊNTICA DA ITÁLIA NO SEU PRATO</h1>
+						<p>
+							No coração da cidade, nosso restaurante traz os verdadeiros
+							sabores da culinária italiana, com ingredientes frescos, receitas
+							tradicionais e um ambiente acolhedor. Venha viver essa experiência
+							única!
+						</p>
+						<button class="button">RESERVE AGORA</button>
+					</div>
+				</section>
+			</div>
 
-      <section class="container-infos">
-        <div class="card-info-left">
-          <div class="card-info">
-            <div class="card-header">
-              <img src="./src/images/icons8-caderno-60.png" alt="">
-              <h3>SABOR AUTÊNTICO</h3>
-            </div>
-            <p>Planeje sua visita ao nosso restaurante e experimente nosso sabor autêntico. Faça sua reserva online com antecedência de forma rápida e prática.</p>
-          </div>
-          <div class="card-info">
-            <div class="card-header">
-              <img src="./src/images/icons8-cloche-60.png" alt="">
-              <h3>INGREDIENTES PREMIUM</h3>
-            </div>
-            <p>Nossos pratos são preparados com ingredientes frescos e receitas tradicionais, trazendo o verdadeiro gosto da culinária italiana para você.</p>
-          </div>
-          <div class="card-info">
-            <div class="card-header">
-              <img src="./src/images/icons8-livro-aberto-60.png" alt="">
-              <h3>MENU CRIATIVO</h3>
-            </div>
-            <p>Cada receita conta uma história. Descubra o sabor e a tradição por trás dos nossos pratos e sinta-se em uma verdadeira viagem gastronômica.</p>
-          </div>
-        </div>
-        <div class="card-info-right">
-        </div>
-        <img class="new-image" src="./src/images/info-card-2.jpg" alt="Nova imagem">
-      </section>
-      
-      <section class="section-dishes">
-        <div class="item1">
-          <h4>LASANHA TRADICIONAL</h4>
-          <p>Camadas generosas de massa intercaladas com molho de tomate artesanal, carne moída temperada e um irresistível creme de queijo gratinado ao forno. Um verdadeiro clássico italiano!</p>
-        </div>
-        <div class="item item2">
-          <h4>PANNA COTTA</h4>
-          <p>Uma sobremesa leve e delicada, feita com creme de leite, açúcar e baunilha, servida com uma irresistível calda de frutas vermelhas ou caramelo.</p>
-        </div>
-        <div class="item item3">
-        </div>
-        <div class="item item4">
-          <h4>RISOTO CREMOSOS</h4>
-          <p>Arroz italiano cozido lentamente no caldo, combinado com ingredientes frescos e finalizado com manteiga e queijo parmesão para uma textura aveludada e sabor inesquecível.</p>
-        </div>
-        <div class="item item5">
-        </div>
-        <div class="item item6">
-          <h4>CAPONATA SICILIANA</h4>
-          <p>Uma clássica receita italiana à base de berinjela, pimentões e azeitonas, cozidos lentamente em um molho agridoce irresistível. Perfeita como entrada ou acompanhamento!</p>
-        </div>
-        <div class="item item7">
-        </div>
-      </section>
-      
-      <section class="section-foods">
-        <h3>------- Pizzas & Massas -------</h3>
-        <h2>SABOR E TRADIÇÃO EM CADA PRATO</h2>
-        <div class="foods-content">
-          <div class="foods-left">
-            <div class="menu">
-              <img src="./src/images/dishes/pizza-1.png" alt="">
-              <div class="menu-info">
-                <h4>PIZZA MARGHERITA</h4>
-                <p>Clássica combinação de molho de tomate, mussarela e manjericão fresco.</p>
-                <img src="./src/images/stars-rating.png" alt="">
-              </div>
-            </div>
-            <div class="menu">
-              <img src="./src/images/dishes/pizza-2.png" alt="">
-              <div class="menu-info">
-                <h4>PIZZA DE PRESUNTO PARMA </h4>
-                <p>Finas fatias de presunto de Parma finalizadas com lascas de parmesão.  </p>
-                <img src="./src/images/stars-rating.png" alt="">
-              </div>
-            </div>
-            <div class="menu">
-              <img src="./src/images/dishes/pizza-3.png" alt="">
-              <div class="menu-info">
-                <h4>PIZZA DE PEPPERONI  </h4>
-                <p>Mussarela derretida e generosas fatias de pepperoni levemente picante.  </p>
-                <img src="./src/images/stars-rating.png" alt="">
-              </div>
-            </div>
-            <div class="menu">
-              <img src="./src/images/dishes/pizza-4.png" alt="">
-              <div class="menu-info">
-                <h4>PIZZA DE CAMARRÃO </h4>
-                <p>Camarões suculentos sobre uma base de molho de tomate e queijo mussarela. </p>
-                <img src="./src/images/stars-rating.png" alt="">
-              </div>
-            </div>
-            <div class="menu">
-              <img src="./src/images/dishes/pizza-5.png" alt="">
-              <div class="menu-info">
-                <h4>PIZZA PORTUGUESA </h4>
-                <p>Presunto, ovos, cebola, azeitonas e queijo em perfeita harmonia </p>
-                <img src="./src/images/stars-rating.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="chef-center">
-            <div class="chef"></div>
-          </div>
-          <div class="foods-right">
-            <div class="menu">
-              <img src="./src/images/dishes/food-1.png" alt="">
-              <div class="menu-info">
-                <h4>SPAGHETTI COM CAMARÕES </h4>
-                <p>Massa longa combinada com camarões salteados no azeite, alho e ervas finas. </p>
-                <img src="./src/images/stars-rating.png" alt="">
-              </div>
-            </div>
-            <div class="menu">
-              <img src="./src/images/dishes/food-2.png" alt="">
-              <div class="menu-info">
-                <h4>TALHARIM AO MOLHO BRANCO</h4>
-                <p>Massa envolvida em um cremoso molho branco à base de parmesão e noz-moscada. </p>
-                <img src="./src/images/stars-rating.png" alt="">
-              </div>
-            </div>
-            <div class="menu">
-              <img src="./src/images/dishes/food-3.png" alt="">
-              <div class="menu-info">
-                <h4>PENNE AO PESTO </h4>
-                <p>Penne salteado com molho pesto de manjericão, alho e parmesão. </p>
-                <img src="./src/images/stars-rating.png" alt="">
-              </div>
-            </div>
-            <div class="menu">
-              <img src="./src/images/dishes/food-4.png" alt="">
-              <div class="menu-info">
-                <h4>RAVIOLI DE RICOTA E ESPINAFRE</h4>
-                <p>Massa recheada com ricota e espinafre, servida com molho de tomate rústico. </p>
-                <img src="./src/images/stars-rating.png" alt="">
-              </div>
-            </div>
-            <div class="menu">
-              <img src="./src/images/dishes/food-5.png" alt="">
-              <div class="menu-info">
-                <h4>FETTUCCINE ALFREDO </h4>
-                <p>Massa envolvida em um molho cremoso de parmesão e manteiga.  </p>
-                <img src="./src/images/stars-rating.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+			<section class="container-infos">
+				<div class="card-info-left">
+					<div class="card-info">
+						<div class="card-header">
+							<img src="./src/images/icons8-caderno-60.png" alt="" />
+							<h3>SABOR AUTÊNTICO</h3>
+						</div>
+						<p>
+							Planeje sua visita ao nosso restaurante e experimente nosso sabor
+							autêntico. Faça sua reserva online com antecedência de forma
+							rápida e prática.
+						</p>
+					</div>
+					<div class="card-info">
+						<div class="card-header">
+							<img src="./src/images/icons8-cloche-60.png" alt="" />
+							<h3>INGREDIENTES PREMIUM</h3>
+						</div>
+						<p>
+							Nossos pratos são preparados com ingredientes frescos e receitas
+							tradicionais, trazendo o verdadeiro gosto da culinária italiana
+							para você.
+						</p>
+					</div>
+					<div class="card-info">
+						<div class="card-header">
+							<img src="./src/images/icons8-livro-aberto-60.png" alt="" />
+							<h3>MENU CRIATIVO</h3>
+						</div>
+						<p>
+							Cada receita conta uma história. Descubra o sabor e a tradição por
+							trás dos nossos pratos e sinta-se em uma verdadeira viagem
+							gastronômica.
+						</p>
+					</div>
+				</div>
+				<div class="card-info-right"></div>
+				<img
+					class="new-image"
+					src="./src/images/info-card-2.jpg"
+					alt="Nova imagem"
+				/>
+			</section>
 
-      <section class="section-infos">
-        <div class="card-text">
-            <img src="./src/images/icons/icons8-cronômetro-80.png" alt="">
-            <h4>ENTREGA EM 30 MINUTOS</h4>
-            <p>Receba seu pedido rapidamente! Garantimos a entrega em até 30 minutos para que você possa saborear sua refeição ainda quente e fresca.</p>
-        </div>
-        <div class="card-text">
-            <img src="./src/images/icons/icons8-entrega-80 (1).png" alt="">
-            <h4>VARIEDADE DE DRINKS</h4>
-            <p>Desfrute de uma seleção incrível de drinks, desde os clássicos até criações exclusivas, perfeitos para acompanhar sua refeição.</p>
-        </div>
-        <div class="card-text">
-            <img src="./src/images/icons/icons8-entrega-80.png" alt="">
-            <h4>DELIVERY GRÁTIS</h4>
-            <p>Faça seu pedido sem preocupações! Oferecemos entrega gratuita para que você aproveite seus pratos favoritos sem custo extra.</p>
-        </div>
-        <div class="card-text">
-            <img src="./src/images/icons/icons8-medalha-80.png" alt="">
-            <h4>MELHOR QUALIDADE</h4>
-            <p>Trabalhamos com ingredientes frescos e receitas autênticas para garantir a melhor experiência gastronômica para você.</p>
-        </div>
-    </section>
+			<section class="section-dishes">
+				<div class="item1">
+					<h4>LASANHA TRADICIONAL</h4>
+					<p>
+						Camadas generosas de massa intercaladas com molho de tomate
+						artesanal, carne moída temperada e um irresistível creme de queijo
+						gratinado ao forno. Um verdadeiro clássico italiano!
+					</p>
+				</div>
+				<div class="item item2">
+					<h4>PANNA COTTA</h4>
+					<p>
+						Uma sobremesa leve e delicada, feita com creme de leite, açúcar e
+						baunilha, servida com uma irresistível calda de frutas vermelhas ou
+						caramelo.
+					</p>
+				</div>
+				<div class="item item3"></div>
+				<div class="item item4">
+					<h4>RISOTO CREMOSOS</h4>
+					<p>
+						Arroz italiano cozido lentamente no caldo, combinado com
+						ingredientes frescos e finalizado com manteiga e queijo parmesão
+						para uma textura aveludada e sabor inesquecível.
+					</p>
+				</div>
+				<div class="item item5"></div>
+				<div class="item item6">
+					<h4>CAPONATA SICILIANA</h4>
+					<p>
+						Uma clássica receita italiana à base de berinjela, pimentões e
+						azeitonas, cozidos lentamente em um molho agridoce irresistível.
+						Perfeita como entrada ou acompanhamento!
+					</p>
+				</div>
+				<div class="item item7"></div>
+			</section>
 
-    <section class="delivery">
-      <div class="text-delivery">
-        <h4>Praticidade & Sabor</h4>
-        <h2>EXPLORANDO O MUNDO DO DELIVERY</h2>
-        <p>Nosso serviço de delivery leva até você pratos preparados com ingredientes selecionados, garantindo sabor, qualidade e praticidade. Escolha seu pedido, faça sua compra com poucos cliques e aproveite a experiência de um restaurante no conforto da sua casa.</p>
-        <button class="button-delivery">PEÇA AGORA</button>
-      </div>
-      <div class="img-delivery">
-        <img src="./src/images/dishes/pizza-6.png" alt="">
-      </div>
-    </section>
-    
+			<section class="section-foods">
+				<h3>------- Pizzas & Massas -------</h3>
+				<h2>SABOR E TRADIÇÃO EM CADA PRATO</h2>
+				<div class="foods-content">
+					<div class="foods-left">
+						<div class="menu">
+							<img src="./src/images/dishes/pizza-1.png" alt="" />
+							<div class="menu-info">
+								<h4>PIZZA MARGHERITA</h4>
+								<p>
+									Clássica combinação de molho de tomate, mussarela e manjericão
+									fresco.
+								</p>
+								<img src="./src/images/stars-rating.png" alt="" />
+							</div>
+						</div>
+						<div class="menu">
+							<img src="./src/images/dishes/pizza-2.png" alt="" />
+							<div class="menu-info">
+								<h4>PIZZA DE PRESUNTO PARMA</h4>
+								<p>
+									Finas fatias de presunto de Parma finalizadas com lascas de
+									parmesão.
+								</p>
+								<img src="./src/images/stars-rating.png" alt="" />
+							</div>
+						</div>
+						<div class="menu">
+							<img src="./src/images/dishes/pizza-3.png" alt="" />
+							<div class="menu-info">
+								<h4>PIZZA DE PEPPERONI</h4>
+								<p>
+									Mussarela derretida e generosas fatias de pepperoni levemente
+									picante.
+								</p>
+								<img src="./src/images/stars-rating.png" alt="" />
+							</div>
+						</div>
+						<div class="menu">
+							<img src="./src/images/dishes/pizza-4.png" alt="" />
+							<div class="menu-info">
+								<h4>PIZZA DE CAMARRÃO</h4>
+								<p>
+									Camarões suculentos sobre uma base de molho de tomate e queijo
+									mussarela.
+								</p>
+								<img src="./src/images/stars-rating.png" alt="" />
+							</div>
+						</div>
+						<div class="menu">
+							<img src="./src/images/dishes/pizza-5.png" alt="" />
+							<div class="menu-info">
+								<h4>PIZZA PORTUGUESA</h4>
+								<p>
+									Presunto, ovos, cebola, azeitonas e queijo em perfeita
+									harmonia
+								</p>
+								<img src="./src/images/stars-rating.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="chef-center">
+						<div class="chef"></div>
+					</div>
+					<div class="foods-right">
+						<div class="menu">
+							<img src="./src/images/dishes/food-1.png" alt="" />
+							<div class="menu-info">
+								<h4>SPAGHETTI COM CAMARÕES</h4>
+								<p>
+									Massa longa combinada com camarões salteados no azeite, alho e
+									ervas finas.
+								</p>
+								<img src="./src/images/stars-rating.png" alt="" />
+							</div>
+						</div>
+						<div class="menu">
+							<img src="./src/images/dishes/food-2.png" alt="" />
+							<div class="menu-info">
+								<h4>TALHARIM AO MOLHO BRANCO</h4>
+								<p>
+									Massa envolvida em um cremoso molho branco à base de parmesão
+									e noz-moscada.
+								</p>
+								<img src="./src/images/stars-rating.png" alt="" />
+							</div>
+						</div>
+						<div class="menu">
+							<img src="./src/images/dishes/food-3.png" alt="" />
+							<div class="menu-info">
+								<h4>PENNE AO PESTO</h4>
+								<p>
+									Penne salteado com molho pesto de manjericão, alho e parmesão.
+								</p>
+								<img src="./src/images/stars-rating.png" alt="" />
+							</div>
+						</div>
+						<div class="menu">
+							<img src="./src/images/dishes/food-4.png" alt="" />
+							<div class="menu-info">
+								<h4>RAVIOLI DE RICOTA E ESPINAFRE</h4>
+								<p>
+									Massa recheada com ricota e espinafre, servida com molho de
+									tomate rústico.
+								</p>
+								<img src="./src/images/stars-rating.png" alt="" />
+							</div>
+						</div>
+						<div class="menu">
+							<img src="./src/images/dishes/food-5.png" alt="" />
+							<div class="menu-info">
+								<h4>FETTUCCINE ALFREDO</h4>
+								<p>
+									Massa envolvida em um molho cremoso de parmesão e manteiga.
+								</p>
+								<img src="./src/images/stars-rating.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      
-    
-      <section id="order" class="order">
-        <div class="container-order">
-          <div class="titles">
-            <h4>Reserve Agora</h4>
-            <h2>FAÇA SUA RESERVA</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, tempore autem nulla, maiores iure sint quos minima accusamus asperiores non recusandae nihil illo eveniet temporibus possimus pariatur ea officiis nobis.</p>
-          </div>
-          <form action="">
-            <div class="input-box">
-              <div class="input">
-                <label for="name">Nome</label>
-                <input type="text" id="name" placeholder="Digite seu Nome" />
-              </div>
-              <div class="input">
-                <label for="name">Número de Pessoas</label>
-                <input
-                  type="number"
-                  id="name"
-                  placeholder="Digite a quantidade de pessoas"
-                />
-              </div>
-              <div class="input">
-                <label for="name">Dia e Hora</label>
-                <input type="datetime-local" id="name" />
-              </div>
-            </div>           
-            <button class="button-delivery">RESERVE AGORA</button>
-          </form>
-        </div>
-      </section>
+			<section class="section-infos">
+				<div class="card-text">
+					<img src="./src/images/icons/icons8-cronômetro-80.png" alt="" />
+					<h4>ENTREGA EM 30 MINUTOS</h4>
+					<p>
+						Receba seu pedido rapidamente! Garantimos a entrega em até 30
+						minutos para que você possa saborear sua refeição ainda quente e
+						fresca.
+					</p>
+				</div>
+				<div class="card-text">
+					<img src="./src/images/icons/icons8-entrega-80 (1).png" alt="" />
+					<h4>VARIEDADE DE DRINKS</h4>
+					<p>
+						Desfrute de uma seleção incrível de drinks, desde os clássicos até
+						criações exclusivas, perfeitos para acompanhar sua refeição.
+					</p>
+				</div>
+				<div class="card-text">
+					<img src="./src/images/icons/icons8-entrega-80.png" alt="" />
+					<h4>DELIVERY GRÁTIS</h4>
+					<p>
+						Faça seu pedido sem preocupações! Oferecemos entrega gratuita para
+						que você aproveite seus pratos favoritos sem custo extra.
+					</p>
+				</div>
+				<div class="card-text">
+					<img src="./src/images/icons/icons8-medalha-80.png" alt="" />
+					<h4>MELHOR QUALIDADE</h4>
+					<p>
+						Trabalhamos com ingredientes frescos e receitas autênticas para
+						garantir a melhor experiência gastronômica para você.
+					</p>
+				</div>
+			</section>
 
+			<section class="delivery">
+				<div class="text-delivery">
+					<h4>Praticidade & Sabor</h4>
+					<h2>EXPLORANDO O MUNDO DO DELIVERY</h2>
+					<p>
+						Nosso serviço de delivery leva até você pratos preparados com
+						ingredientes selecionados, garantindo sabor, qualidade e
+						praticidade. Escolha seu pedido, faça sua compra com poucos cliques
+						e aproveite a experiência de um restaurante no conforto da sua casa.
+					</p>
+					<button class="button-delivery">PEÇA AGORA</button>
+				</div>
+				<div class="img-delivery">
+					<img src="./src/images/dishes/pizza-6.png" alt="" />
+				</div>
+			</section>
 
+			<section class="section-galery">
+				<div class="galery galery1"></div>
+				<div class="galery galery2"></div>
+				<div class="galery galery3"></div>
+				<div class="galery galery4"></div>
+				<div class="galery galery5"></div>
+				<div class="galery galery6"></div>
+			</section>
 
+			<section id="order" class="order">
+				<div class="container-reservation">
+					<h4>Faça sua reserva</h4>
+					<h2>RESERVE SUA MESA</h2>
+					<p>
+						Reserve sua mesa agora e desfrute de momentos especiais em nosso
+						restaurante. Nossa equipe está pronta para recebê-lo com pratos
+						deliciosos, um ambiente acolhedor e um atendimento excepcional.
+					</p>
+					<form>
+						<input type="text" placeholder="Nome" required />
+						<input type="number" placeholder="Número de Pessoas" required />
+						<input type="datetime-local" required />
+						<input type="text" name="" id="" placeholder="Observações" />
+						<button type="submit" class="button-delivery">RESERVE AGORA</button>
+					</form>
+				</div>
+				<img
+					class="new-image-reservation"
+					src="./src/images/restaurant.jpg"
+					alt="Nova imagem"
+				/>
+			</section>
+		</main>
 
-      
-    </main>
-    <footer>
-      <div class="footer-locations">
-        <h3>Localização</h3>
-        <p>Brasil</p>
-        <p>USA</p>
-        <p>France</p>
-        <p>Japan</p>
-      </div>
-      <div class="footer-contact">
-        <h3>Informações de Contato</h3>
-        <p>+123-456-7890</p>
-        <p>+111-222-3333</p>
-        <p>resto@resto.com.br</p>
-        New York, USA
-      </div>
-      <div class="footer-follow">
-        <h3>Nos Siga</h3>
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        <a href="https://www.x.com" target="_blank">Twitter</a>
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com" target="_blank">Linkedin</a>
-      </div>
-    </footer>
-    <hr />
-    <p id="text-copy">Copyright @ 2024 By Eduardo Debarba</p>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<footer class="footer">
+			<div class="container-footer">
+				<div class="footer-about">
+					<h3>VENHA NOS CONHECER</h3>
+					<p>
+						<i class="fas fa-map-marker-alt"></i> Rua Itália, 123 - Centro, São
+						Paulo
+					</p>
+					<p><i class="fas fa-clock"></i> Seg - Dom: 11h - 23h</p>
+				</div>
+				<div class="footer-contact">
+					<h3>CONTATO</h3>
+					<p><i class="fas fa-phone"></i> (11) 98765-4321</p>
+					<p><i class="fas fa-envelope"></i> contato@restaurantitaliano.com</p>
+				</div>
+				<div class="footer-social">
+					<h3>NOS SIGA</h3>
+					<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2025 Eduardo Debarba. Todos os direitos reservados.</p>
+			</div>
+		</footer>
 
-    <script src="./src/js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  </body>
-  <!-- <div class="loader-container">
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./src/js/script.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+	<!-- <div class="loader-container">
     <img src="./src/images/loader.gif" alt="">
   </div> -->
 </html>
