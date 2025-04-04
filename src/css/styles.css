@@ -1,8 +1,8 @@
 :root {
-    --bg-primary-color: #2F3032;  /* Cor principal */
-    --bg-secondary-color: #004040;  /* Cor de fundo */
-    --text-color: #fff;  /* Cor do texto */
-	--title-color:#f8c471;
+	--bg-primary-color: #2f3032; /* Cor principal */
+	--bg-secondary-color: #004040; /* Cor de fundo */
+	--text-color: #fff; /* Cor do texto */
+	--title-color: #f8c471;
 }
 
 * {
@@ -16,11 +16,15 @@ body {
 	background-color: var(--bg-primary-color);
 }
 
-p{
+p {
 	font-family: "Roboto", sans-serif;
 }
 
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
 	font-family: "Righteous", sans-serif;
 }
 
@@ -54,7 +58,7 @@ header {
 	color: var(--title-color);
 }
 
-.name-restaurant p{
+.name-restaurant p {
 	font-family: "Righteous", sans-serif;
 }
 
@@ -136,7 +140,8 @@ header {
 	font-size: 1.2rem;
 }
 
-.button:hover,.button-delivery:hover{
+.button:hover,
+.button-delivery:hover {
 	color: #ffeb99;
 	transition: 1s;
 }
@@ -401,7 +406,7 @@ h2 {
 	margin-left: 2.5rem;
 }
 
-.text-delivery h4{
+.text-delivery h4 {
 	font-family: "Satisfy", cursive;
 	color: var(--title-color);
 	font-size: 2rem;
