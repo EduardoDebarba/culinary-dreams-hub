@@ -1,7 +1,7 @@
 :root {
-	--bg-primary-color: #2f3032; /* Cor principal */
-	--bg-secondary-color: #004040; /* Cor de fundo */
-	--text-color: #fff; /* Cor do texto */
+	--bg-primary-color: #2f3032; 
+	--bg-secondary-color: #004040;
+	--text-color: #fff;
 	--title-color: #f8c471;
 	--swiper-navigation-color: #f8c471;
 	--swiper-pagination-color: #f8c471;
@@ -26,7 +26,7 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5, .name-restaurant p {
 	font-family: "Righteous", sans-serif;
 }
 
@@ -63,10 +63,6 @@ h5 {
 
 .name-restaurant ion-icon {
 	color: var(--title-color);
-}
-
-.name-restaurant p {
-	font-family: "Righteous", sans-serif;
 }
 
 .list-menu {
@@ -172,7 +168,7 @@ h5 {
 	flex-direction: column;
 	justify-content: center;
 	gap: 3rem;
-	margin-right: 3rem;
+	margin: 0 3rem 0 0;
 }
 
 .card-info p {
@@ -328,10 +324,6 @@ h2 {
 	border-bottom: 1px solid var(--bg-secondary-color);
 }
 
-.menu img {
-	width: 25%;
-}
-
 .menu-info {
 	display: flex;
 	flex-direction: column;
@@ -342,7 +334,7 @@ h2 {
 	margin-left: 1rem;
 }
 
-.menu-info img {
+.menu-info img, .menu img, .card-text img {
 	width: 25%;
 }
 
@@ -381,10 +373,6 @@ h2 {
 	gap: 1rem;
 	width: 20%;
 	text-align: center;
-}
-
-.card-text img {
-	width: 25%;
 }
 
 .card-text h4 {
@@ -507,9 +495,10 @@ h2 {
 	width: 55%;
 	background-color: var(--bg-secondary-color);
 	padding: 2rem;
-	height: 100%;
+	height: auto;
 	margin-left: 3rem;
 	z-index: 0;
+	position: relative;
 }
 
 .container-reservation h4 {
@@ -551,8 +540,8 @@ input {
 	top: 50%;
 	transform: translateY(-50%);
 	width: 50%;
-	height: 75%;
-	z-index: 1;
+	height: 70%;
+	z-index: 10;
 }
 
 .testimonials {
@@ -703,7 +692,7 @@ input {
 		gap: 0.8rem;
 	}
 
-	.main-home {
+	.main-home, .swiper-slide p {
 		width: 90%;
 	}
 
@@ -770,7 +759,7 @@ input {
 	}
 
 	.foods-left,
-	.foods-right {
+	.foods-right, .button-delivery, .container-reservation p, input, .card-text {
 		width: 100%;
 	}
 
@@ -793,12 +782,8 @@ input {
 		text-align: center;
 	}
 
-	.button-delivery {
-		width: 100%;
-	}
-
 	.section-galery {
-		/* display: grid; */
+		display: grid;
 		grid-template-areas:
 			"galery1"
 			"galery2"
@@ -807,7 +792,6 @@ input {
 			"galery5"
 			"galery6";
 		gap: 1rem;
-		/* padding: 1rem; */
 		height: auto;
 	}
 
@@ -829,24 +813,12 @@ input {
 		text-align: center;
 	}
 
-	.container-reservation p {
-		width: 100%;
-	}
-
-	input {
-		width: 100%;
-	}
-
 	.new-image-reservation {
 		position: static;
 		transform: none;
 		width: 100%;
 		height: auto;
 		margin-top: 1rem;
-	}
-
-	.swiper-slide p {
-		width: 90%;
 	}
 
 	.swiper-person {
@@ -862,15 +834,9 @@ input {
 		align-items: center;
 		gap: 1.5rem;
 	}
-
-	.card-text {
-		width: 100%;
-	}
 }
 
-/* Tablet: 481px a 1024px */
 @media (min-width: 481px) and (max-width: 1024px) {
-	/* Header */
 	.header {
 		flex-direction: row;
 		align-items: center;
@@ -890,7 +856,7 @@ input {
 		gap: 1rem;
 	}
 
-	.list-menu li a {
+	.list-menu li a, .foods-left p, .text-delivery p {
 		font-size: 1rem;
 	}
 
@@ -984,10 +950,6 @@ input {
 		font-size: 1.5rem;
 	}
 
-	.foods-left p {
-		font-size: 1rem;
-	}
-
 	.foods-right img {
 		width: 25%;
 	}
@@ -1015,10 +977,6 @@ input {
 
 	.text-delivery h2 {
 		font-size: 1.5rem;
-	}
-
-	.text-delivery p {
-		font-size: 1rem;
 	}
 
 	.button-delivery {
@@ -1089,7 +1047,7 @@ input {
 	}
 
 	.testimonials {
-		height: 80dvh;
+		height: auto;
 	}
 
 	.swiper {
@@ -1111,9 +1069,8 @@ input {
 		width: 8%;
 	}
 
-	/* Rodapé */
 	.container-footer {
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 		text-align: center;
 		padding: 2rem 1rem;
@@ -1130,44 +1087,5 @@ input {
 
 	.card-text p {
 		font-size: 0.95rem;
-	}
-}
-
-/* Desktop médio: 1025px até 1465px */
-@media (min-width: 1025px) and (max-width: 1465px) {
-	.main-home {
-		width: 60%;
-	}
-
-	.card-info-left,
-	.card-info-right {
-		width: 100%;
-	}
-
-	.foods-content {
-		flex-direction: row;
-		gap: 2rem;
-	}
-
-	.foods-left,
-	.foods-right {
-		width: 45%;
-	}
-
-	.delivery {
-		flex-direction: row;
-	}
-
-	.text-delivery,
-	.img-delivery {
-		width: 50%;
-	}
-
-	.container-reservation {
-		width: 60%;
-	}
-
-	.new-image-reservation {
-		width: 35%;
 	}
 }

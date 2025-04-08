@@ -21,3 +21,10 @@ window.addEventListener('scroll', function () {
         header.classList.remove('scrolled');
     }
 });
+
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
